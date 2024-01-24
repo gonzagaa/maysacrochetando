@@ -160,7 +160,7 @@ html {
 }
 
 #home .content .image img {
-  width: 100%;
+  width: 90%;
 }
 
 /*CURSO =================== */
@@ -175,7 +175,6 @@ html {
 
 #galeria header h2 {
   font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: var(--color-text);
 }
@@ -307,6 +306,45 @@ html {
   cursor: pointer;
 }
 
+/* buttonWhatsapp =================== */
+#buttonWhatsapp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: all 300ms ease-in-out;
+}
+
+#buttonWhatsapp.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+#buttonWhatsapp {
+  color: var(--secondary-color);
+}
+
+#buttonWhatsapp ion-icon {
+  font-size: 5rem;
+  transition: all 300ms ease-in-out;
+  color: var(--secondary-color);
+  background-color: #fef6e4;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+}
+
+#buttonWhatsapp ion-icon:hover {
+  transform: scale(1.1);
+}
+
 /*MEDIA =================== */
 @media (min-width: 1300px) {
   .wrapper {
@@ -369,6 +407,18 @@ html {
 
   header#home .content .text ul li {
     font-size: 2rem;
+  }
+
+  section#galeria .wrapper header h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--color-text);
+  }
+
+  section#galeria .wrapper header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
   }
 
   #galeria .images {
