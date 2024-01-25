@@ -352,11 +352,11 @@ html {
   }
 
   header#home {
-    height: 65vh;
+    height: 100vh;
   }
 
   header#home .wrapper .content {
-    height: 70vh;
+    height: 100vh;
   }
 
   header#home .wrapper {
