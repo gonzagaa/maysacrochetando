@@ -79,6 +79,7 @@ html {
 #home {
   background-color: var(--background-color);
   height: 100vh;
+  position: relative;
 }
 
 #home .content {
@@ -92,7 +93,7 @@ html {
 }
 
 #home .content .text {
-  margin-top: 9.2rem;
+  margin-top: 13.2rem;
   text-align: start;
 }
 
@@ -133,25 +134,39 @@ html {
   font-weight: 800;
 }
 
-#home .content .text a button {
-  font-family: 'Poppins', sans-serif;
+#home .content .buttons {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+
+#home a {
+  text-decoration: none;
+}
+
+#home a button {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+
+  padding: .5rem 1rem;
   border-radius: 1rem;
-  padding: 1rem 2rem;
-  border: none;
-
   background-color: var(--button-color);
-  color: var(--color-text);
-  font-weight: 600;
-
-  box-shadow: 2px 0px 15px #999999;
+  color: #111111;
+  font-weight: 800;
+  font-size: 1.3rem;
+  border: none;
 
   transition: all 200ms ease-in-out;
 }
 
-#home .content .text a button:hover {
-  background-color: #ff84b3;
-  box-shadow: 2px 0px 15px #757575;
-  color: #021855;
+#home a button ion-icon {
+  font-size: 2.5rem;
+}
+
+#home a button:hover {
+  box-shadow: 2px 4px 10px #8a8a8a;
   cursor: pointer;
 }
 
@@ -161,6 +176,12 @@ html {
 
 #home .content .image img {
   width: 90%;
+}
+
+#home a button.ig {
+  background-color: var(--card-background);
+  outline: 2px solid var(--button-color);
+  color: var(--button-color);
 }
 
 /*CURSO =================== */
@@ -269,41 +290,6 @@ html {
   justify-content: baseline;
   align-items: center;
   gap: 2rem;
-}
-
-#footer .content .buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-#footer a {
-  text-decoration: none;
-}
-
-#footer a button {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  background-color: var(--button-color);
-  color: #111111;
-  font-weight: 800;
-  font-size: 1.8rem;
-
-  transition: all 200ms ease-in-out;
-}
-
-#footer a button ion-icon {
-  font-size: 2.5rem;
-}
-
-#footer a button:hover {
-  box-shadow: 2px 4px 10px #8a8a8a;
-  cursor: pointer;
 }
 
 /* buttonWhatsapp =================== */
@@ -445,10 +431,16 @@ html {
     margin-top: initial;
   }
 
-  section#footer .content .buttons {
+  header#home .wrapper .content .buttons {
     display: flex;
     flex-direction: row;
+    justify-content: start;
     gap: 2rem;
+  }
+
+  header#home .wrapper .content .buttons a button {
+    padding: 1rem 2rem;
+    gap: 1rem;
   }
 }
  
