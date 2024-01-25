@@ -116,17 +116,6 @@ nav {
     position: fixed;
   }
   
-  /* NAVIGATION ON SCROLL =================== */
-  nav.scroll {
-    backdrop-filter: blur(10px) saturate(100%);
-    -webkit-backdrop-filter: blur(10px) saturate(100%);
-    background-color: #fffffeb4;
-  }
-  
-  nav.scroll path {
-    stroke: var(--color-text);
-  }
-  
   /* MENU EXPANDED =================== */
   body.menu-expanded {
     overflow: hidden;
