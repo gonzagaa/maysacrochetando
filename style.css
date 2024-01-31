@@ -119,7 +119,7 @@ html {
 #home .content .text h1 span {
   font-family: "Cormorant", serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--button-color);
 }
 
@@ -137,7 +137,8 @@ html {
 #home .content .buttons {
   display: flex;
   gap: .5rem;
-  justify-content: center;
+  justify-content: start;
+  text-align: left;
 }
 
 #home a {
